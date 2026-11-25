@@ -41,8 +41,6 @@ export function HeroSection({ data: initialData }: HeroSectionProps) {
     }
   }, [data.videoUrl]);
 
-  const overlayAlpha = (data.overlayOpacity ?? 55) / 100;
-
   return (
     <section className="relative w-full min-h-screen flex items-end overflow-hidden bg-[#080C14]">
       {/* Background Video Layer */}
@@ -73,15 +71,6 @@ export function HeroSection({ data: initialData }: HeroSectionProps) {
           />
         ) : null}
 
-        {/* Configurable Overlay Tint */}
-        <div
-          className="absolute inset-0 transition-opacity duration-300 pointer-events-none"
-          style={{ backgroundColor: `rgba(8, 12, 20, ${overlayAlpha})` }}
-        />
-
-        {/* Cinematic Directional Gradients for Maximum Text Contrast */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#080C14]/90 via-[#080C14]/60 to-transparent pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080C14] via-transparent to-[#080C14]/60 pointer-events-none" />
         <div className="absolute inset-0 subtle-grid-bg opacity-15 pointer-events-none" />
       </div>
 
@@ -96,7 +85,7 @@ export function HeroSection({ data: initialData }: HeroSectionProps) {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="mb-6 text-left"
           >
-            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.04] drop-shadow-md text-left">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.04] drop-shadow-[0_2px_14px_rgba(0,0,0,0.85)] text-left">
               <RichTextContent content={data.title || "Creative staffing for what's next."} inline />
             </h1>
           </motion.div>
@@ -112,7 +101,7 @@ export function HeroSection({ data: initialData }: HeroSectionProps) {
               <RichTextContent
                 content={data.subtitle}
                 as="div"
-                className="text-base sm:text-lg md:text-xl text-slate-200 font-normal leading-relaxed drop-shadow-sm text-left"
+                className="text-base sm:text-lg md:text-xl text-white font-medium leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] text-left"
               />
             </motion.div>
           )}

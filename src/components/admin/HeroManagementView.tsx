@@ -5,7 +5,6 @@ import {
   Video,
   Play,
   Image as ImageIcon,
-  Sliders,
   Type,
   Link2,
   Save,
@@ -413,31 +412,6 @@ export function HeroManagementView() {
                       : 'bg-white border-slate-300 text-slate-900 placeholder:text-slate-400 focus:border-indigo-600'
                   }`}
                 />
-              </div>
-            </div>
-
-            {/* Overlay Darkness Slider */}
-            <div className="pt-2 border-t border-slate-200 dark:border-slate-800">
-              <div className="flex items-center justify-between mb-1.5">
-                <label className="text-xs font-bold flex items-center gap-1.5">
-                  <Sliders className="w-3.5 h-3.5 text-slate-400" />
-                  <span>Cinematic Overlay Darkness</span>
-                </label>
-                <span className="text-xs font-mono font-bold text-indigo-400">{formData.overlayOpacity}%</span>
-              </div>
-              <input
-                type="range"
-                min="10"
-                max="90"
-                step="5"
-                value={formData.overlayOpacity}
-                onChange={(e) => handleChange('overlayOpacity', Number(e.target.value))}
-                className="w-full accent-indigo-600 cursor-pointer"
-              />
-              <div className="flex justify-between text-[10px] text-slate-500 font-mono mt-1">
-                <span>10% (Lighter)</span>
-                <span>55% (Balanced contrast)</span>
-                <span>90% (Deep dark)</span>
               </div>
             </div>
           </div>

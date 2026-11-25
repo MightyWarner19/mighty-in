@@ -62,7 +62,7 @@ export async function PUT(request: NextRequest) {
     const secondaryCtaLink = (body.secondaryCtaLink || '').trim() || '/contact';
     const videoUrl = (body.videoUrl || '').trim();
     const fallbackImageUrl = (body.fallbackImageUrl || '').trim();
-    const overlayOpacity = typeof body.overlayOpacity === 'number' ? Math.min(100, Math.max(0, body.overlayOpacity)) : 55;
+    const overlayOpacity = typeof body.overlayOpacity === 'number' ? Math.min(100, Math.max(0, body.overlayOpacity)) : 0;
     const isActive = typeof body.isActive === 'boolean' ? body.isActive : true;
 
     const content = {

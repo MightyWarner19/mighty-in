@@ -44,10 +44,6 @@ export function PolicyPageView({ page }: PolicyPageViewProps) {
             sizes="100vw"
             className="object-cover object-center opacity-100 brightness-[1.05] contrast-[1.05]"
           />
-
-          {/* Cinematic gradients for bottom-left text readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/40 to-transparent sm:w-2/3" />
         </div>
 
         {/* Bottom-Left Overlay Content */}

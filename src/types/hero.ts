@@ -8,7 +8,7 @@ export interface HeroData {
   secondaryCtaLink: string;
   videoUrl: string;
   fallbackImageUrl: string;
-  overlayOpacity: number;
+  overlayOpacity?: number;
   isActive: boolean;
 }
 
@@ -23,6 +23,6 @@ export const defaultHeroData: HeroData = {
   secondaryCtaLink: '/contact',
   videoUrl: '',
   fallbackImageUrl: '',
-  overlayOpacity: 55,
+  overlayOpacity: 0,
   isActive: true,
 };
