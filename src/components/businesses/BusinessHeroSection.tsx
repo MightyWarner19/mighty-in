@@ -37,6 +37,7 @@ export function BusinessHeroSection({ data }: BusinessHeroSectionProps) {
           className="object-cover object-center sm:object-right opacity-100 brightness-[1.08] contrast-[1.05]"
         />
         <div className="absolute inset-0 subtle-grid-bg opacity-15 pointer-events-none" />
+        <div className="hero-dark-overlay" aria-hidden="true" />
       </div>
 
       {/* Hero Content (Anchored to Bottom-Left, Full Viewport Responsive, Matching Homepage Grid) */}

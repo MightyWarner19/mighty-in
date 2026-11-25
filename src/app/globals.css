@@ -18,6 +18,9 @@
     --border-hover: #A3A3A3;
     --text-primary: #0F172A;
     --text-muted: #475569;
+
+    /* Hero background dark overlay: transparent in light mode */
+    --hero-dark-overlay: transparent;
   }
 
   .dark {
@@ -29,6 +32,9 @@
     --border-hover: rgba(255, 255, 255, 0.18);
     --text-primary: #F8FAFC;
     --text-muted: #94A3B8;
+
+    /* Subtle dark overlay for dark mode (28% black, adjustable between 20-35%) */
+    --hero-dark-overlay: rgba(0, 0, 0, 0.28);
   }
 
   html {
@@ -83,6 +89,15 @@
 }
 
 @layer utilities {
+  /* Subtle dark overlay for hero sections: visible ONLY in dark mode */
+  .hero-dark-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-color: var(--hero-dark-overlay);
+    transition: background-color 300ms ease;
+  }
+
   /* Typography scale with clamp */
   .text-display-hero {
     font-size: clamp(2.75rem, 6vw + 1rem, 5.5rem);

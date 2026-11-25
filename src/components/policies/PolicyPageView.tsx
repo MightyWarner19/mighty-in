@@ -44,6 +44,7 @@ export function PolicyPageView({ page }: PolicyPageViewProps) {
             sizes="100vw"
             className="object-cover object-center opacity-100 brightness-[1.05] contrast-[1.05]"
           />
+          <div className="hero-dark-overlay" aria-hidden="true" />
         </div>
 
         {/* Bottom-Left Overlay Content */}

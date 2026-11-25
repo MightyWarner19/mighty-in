@@ -72,6 +72,7 @@ export function HeroSection({ data: initialData }: HeroSectionProps) {
         ) : null}
 
         <div className="absolute inset-0 subtle-grid-bg opacity-15 pointer-events-none" />
+        <div className="hero-dark-overlay" aria-hidden="true" />
       </div>
 
       {/* Hero Content (Anchored to the Bottom Left, Full Viewport Responsive) */}
