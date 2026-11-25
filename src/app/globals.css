@@ -33,8 +33,8 @@
     --text-primary: #F8FAFC;
     --text-muted: #94A3B8;
 
-    /* Subtle dark overlay for dark mode (28% black, adjustable between 20-35%) */
-    --hero-dark-overlay: rgba(0, 0, 0, 0.28);
+    /* Subtle dark overlay for dark mode (48% black) */
+    --hero-dark-overlay: rgba(0, 0, 0, 0.48);
   }
 
   html {
