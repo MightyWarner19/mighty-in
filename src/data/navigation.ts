@@ -44,6 +44,14 @@ export const navItems: NavItem[] = [
         color: 'from-emerald-500 to-teal-500',
         subItems: ['Contingent Staffing', 'Direct Hire', 'SOW Pods', 'Talent Acquisition (RPO)'],
       },
+      {
+        name: 'AI and Intellegence',
+        href: '/businesses/ai-and-intellegence',
+        tagline: 'something something something something',
+        description: 'Enterprise AI workflows, agentic automation, and custom model architectures.',
+        color: 'from-purple-500 to-rose-500',
+        subItems: ['Autonomous Agents', 'ML Pipelines', 'AI Automation', 'Intelligence Layers'],
+      },
     ],
   },
   {
@@ -69,6 +77,7 @@ export const footerLinks = {
     { name: 'Digital & Growth', href: '/businesses/digital-growth' },
     { name: 'Technology & Software', href: '/businesses/technology' },
     { name: 'Talent Solutions', href: '/businesses/talent-solutions' },
+    { name: 'AI and Intellegence', href: '/businesses/ai-and-intellegence' },
   ],
   company: [
     { name: 'About Mighty Warner', href: '/about' },

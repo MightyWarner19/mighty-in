@@ -37,6 +37,11 @@ const defaultMobileBusinesses: MobileBusinessItem[] = [
     href: '/businesses/talent-solutions',
     tagline: 'Build a team • Staffing & SOW Pods',
   },
+  {
+    name: 'AI and Intellegence',
+    href: '/businesses/ai-and-intellegence',
+    tagline: 'Build intelligent systems • AI & Agents',
+  },
 ];
 
 export function MobileNav({ isOpen, onClose }: MobileNavProps) {
